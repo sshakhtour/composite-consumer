@@ -7,8 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # REPLACE THE FOLLOWING WITH THE PROPER VALUES
-      - sshakhtour
-      - composite-host
+      # - YOUR_GITHUB_USER_NAME
+      # - YOUR_COMPOSITE_ACTION_REPO_NAME
       - uses: sshakhtour/composite-host@main
         with:
           PYTHON_VERSION: 3.8
