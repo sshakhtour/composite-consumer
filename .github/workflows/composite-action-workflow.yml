@@ -1,0 +1,14 @@
+name: Use Composite Action
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # REPLACE THE FOLLOWING WITH THE PROPER VALUES
+      - sshakhtour
+      - composite-host
+      - uses: sshakhtour/composite-host@main
+        with:
+          PYTHON_VERSION: 3.8
